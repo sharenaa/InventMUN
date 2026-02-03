@@ -283,3 +283,29 @@ body {
     padding: 18px 40px;
   }
 }
+
+/* BASE FONT */
+body {
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+/* NAV + SMALL TEXT */
+nav a,
+.subtitle,
+.committee {
+  font-family: 'Inter', Arial, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* MAIN TITLES */
+main h1,
+section h2 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+/* COMMITTEE TITLES */
+.committee span {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 500;
+}
