@@ -182,17 +182,47 @@ nav a.active::after {
   font-size: 13px;
   color: #6b7280;
 }
-footer {
-  padding: 60px 40px;
-  text-align: center;
-  background-color: #0f172a;
-  color: #ffffff;
+.site-footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 80px 70px;
+  background-color: #ffffff;
 }
 
-footer p {
-  font-size: 13px;
-  opacity: 0.8;
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+.footer-column h4 {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.footer-column p {
+  font-size: 15px;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.footer-column a {
+  color: #2563eb;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(37, 99, 235, 0.4);
+  padding-bottom: 1px;
+  transition: 0.2s;
+}
+
+.footer-column a:hover {
+  border-bottom-color: #2563eb;
+}
+
 
 /* Reset */
 body {
@@ -273,3 +303,11 @@ footer {
   margin-top: 80px;
   font-size: 14px;
 }
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
