@@ -311,3 +311,132 @@ footer {
   }
 }
 
+/* BASE */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #374151;
+  background-color: #ffffff;
+}
+
+/* HEADER */
+header {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-bottom: 2px solid #d4af37; /* gold */
+}
+
+header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #0b3c6f; /* blue */
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #0b3c6f;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #d4af37;
+  text-decoration: underline;
+}
+
+/* MAIN */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+/* PAGE TITLE */
+main h1 {
+  font-size: 42px;
+  font-weight: normal;
+  color: #0b3c6f;
+  margin-bottom: 20px;
+}
+
+/* SUBTITLE */
+.subtitle {
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #6b7280;
+}
+
+.subtitle a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+.subtitle a:hover {
+  text-decoration: underline;
+}
+
+/* DIVIDER */
+.divider {
+  border-top: 1px solid #d4af37;
+  margin: 50px 0;
+}
+
+/* SECTION TITLE */
+section h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #0b3c6f;
+  margin-bottom: 20px;
+}
+
+/* SECTION TEXT */
+section p {
+  max-width: 750px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+  font-size: 16px;
+  color: #374151;
+}
+
+/* COMMITTEE LIST */
+.committee {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 10px;
+  border-top: 1px solid #d4af37;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.committee:last-child {
+  border-bottom: 1px solid #d4af37;
+}
+
+.committee span {
+  color: #0b3c6f;
+}
+
+.committee .plus {
+  font-size: 24px;
+  color: #d4af37;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background-color: #0b3c6f;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+  margin-top: 80px;
+  font-size: 14px;
+}
