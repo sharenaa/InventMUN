@@ -50,10 +50,8 @@ body {
   border-bottom: 1px solid #e5e7eb;
 }
 .panel-banner {
-  display: block;
   width: 80%;
-  max-width: 220px;  
-  margin: 20px auto 0;
+  max-width: 240px;  
   border-radius: 10px;
 height: auto; }
 }
