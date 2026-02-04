@@ -955,3 +955,36 @@ nav a.active {
   border-bottom-color: #0b3c6f;
   transition: all 0.3s ease;
 }
+
+/* ===== COMMITTEES – GOLD DIVIDERS BETWEEN EVERY ITEM ===== */
+
+.committee {
+  padding: 22px 0;
+  border-bottom: 1px solid #d4af37; /* GOLD divider */
+}
+
+/* Optional: remove divider from last item */
+.committee:last-child {
+  border-bottom: none;
+}
+
+/* Keep text styling consistent */
+.committee .category {
+  font-size: 13px;
+  color: #6b7280;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.committee .name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0b3c6f;
+}
+
+/* Hover stays subtle */
+.committee:hover .name {
+  color: #d4af37;
+  transition: color 0.3s ease;
+}
