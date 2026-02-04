@@ -51,10 +51,10 @@ body {
 }
 
 .site-title {
-  font-size: 26px;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  color: var(--blue-primary);
+  font-weight: 500;     
+  font-size: 20px;      
+  letter-spacing: 1px; 
+  color: #334155;        
 }
 
 .nav-links a {
