@@ -542,3 +542,74 @@ section p strong {
     padding: 60px 25px;
   }
 }
+/* ===== SCHEDULE PAGE ACCENTS (BLUE & GOLD) ===== */
+
+.schedule-main {
+  background-color: #ffffff;
+}
+
+/* Main title */
+.schedule-main h1 {
+  color: #0b3c6f; /* navy blue */
+  letter-spacing: 1px;
+}
+
+/* Subtitle note */
+.schedule-note {
+  color: #6b7280;
+}
+
+/* Date heading */
+.schedule-date {
+  color: #0b3c6f;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+}
+
+/* Divider line */
+.schedule-main .divider {
+  border-top: 1px solid #d4af37; /* gold */
+  width: 85%;
+  margin: 50px auto 60px;
+}
+
+/* Individual schedule rows */
+.schedule-block {
+  padding: 18px 0;
+  border-bottom: 1px solid #f3e6b3; /* soft gold */
+}
+
+.schedule-block:last-child {
+  border-bottom: none;
+}
+
+/* Time text */
+.schedule-block .time {
+  font-size: 13px;
+  color: #6b7280;
+  letter-spacing: 2px;
+}
+
+/* Event text */
+.schedule-block .event {
+  font-size: 19px;
+  font-weight: 500;
+  color: #0b3c6f;
+}
+
+/* Hover effect (subtle, classy) */
+.schedule-block:hover .event {
+  color: #d4af37;
+  transition: color 0.3s ease;
+}
+
+/* Mobile polish */
+@media (max-width: 700px) {
+  .schedule-date {
+    font-size: 18px;
+  }
+
+  .schedule-block .event {
+    font-size: 17px;
+  }
+}
