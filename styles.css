@@ -814,11 +814,21 @@ nav a.active {
 
 /* Mobile */
 @media (max-width: 700px) {
-  .committees-main {
-    padding: 60px 25px;
+  .committees-main {25px;
   }
 
   .committees-main .committee .event {
     font-size: 16px;
   }
+}
+border-top: 1px solid #d4af37;
+border-bottom: 1px solid #f3e6b3;
+color: #0b3c6f;
+.committee:hover .event {
+  color: #d4af37;
+}
+border-bottom: 1px solid #f3e6b3;
+border-bottom: 2px solid #d4af37;
+.committee:hover {
+  background-color: #fff8dc;
 }
