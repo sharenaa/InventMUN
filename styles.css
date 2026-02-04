@@ -49,6 +49,13 @@ body {
   z-index: 10;
   border-bottom: 1px solid #e5e7eb;
 }
+.panel-banner {
+  display: block;
+  width: 90%;            /* slightly smaller than panel */
+  margin: 22px auto 0;  /* space above, centered */
+  border-radius: 10px;
+}
+
 
 /* BRAND (LOGO + TEXT) */
 .brand {
@@ -56,6 +63,7 @@ body {
   align-items: center;
   gap: 10px; /* space between logo and text */
 }
+
 
 .brand-logo {
   height: 30px;
