@@ -822,3 +822,76 @@ nav a.active {
     font-size: 16px;
   }
 }
+/* ===== COMMITTEES PAGE ACCENTS (BLUE & GOLD) ===== */
+
+.committees-main {
+  background-color: #ffffff;
+}
+
+/* Main title */
+.committees-main h1 {
+  color: #0b3c6f; /* navy blue */
+  letter-spacing: 1px;
+}
+
+/* Subtitle note */
+.committees-subtitle {
+  color: #6b7280;
+}
+
+/* Section heading (like date) */
+.committee-section {
+  color: #0b3c6f;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+/* Divider line */
+.committees-main .divider {
+  border-top: 1px solid #d4af37; /* gold */
+  width: 85%;
+  margin: 50px auto 60px;
+}
+
+/* Individual committee rows */
+.committee-block {
+  padding: 18px 0;
+  border-bottom: 1px solid #f3e6b3; /* soft gold */
+}
+
+.committee-block:last-child {
+  border-bottom: none;
+}
+
+/* Committee category (like time) */
+.committee-block .category {
+  font-size: 13px;
+  color: #6b7280;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Committee name (like event) */
+.committee-block .name {
+  font-size: 19px;
+  font-weight: 500;
+  color: #0b3c6f;
+}
+
+/* Hover effect (same as schedule) */
+.committee-block:hover .name {
+  color: #d4af37;
+  transition: color 0.3s ease;
+}
+
+/* Mobile polish */
+@media (max-width: 700px) {
+  .committee-section {
+    font-size: 18px;
+  }
+
+  .committee-block .name {
+    font-size: 17px;
+  }
+}
