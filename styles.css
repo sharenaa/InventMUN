@@ -51,10 +51,13 @@ body {
 }
 .panel-banner {
   display: block;
-  width: 90%;            /* slightly smaller than panel */
-  margin: 22px auto 0;  /* space above, centered */
+  width: 80%;
+  max-width: 220px;  
+  margin: 20px auto 0;
   border-radius: 10px;
+height: auto; }
 }
+
 
 
 /* BRAND (LOGO + TEXT) */
