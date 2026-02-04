@@ -650,3 +650,91 @@ nav a.active {
   border-bottom: 2px solid #d4af37;
   padding-bottom: 4px;
 }
+/* ===== COMMITTEES PAGE ACCENTS ===== */
+
+.committees-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 90px 40px;
+  text-align: center;
+}
+
+/* Main title */
+.committees-main h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  color: #0b3c6f;
+  margin-bottom: 15px;
+}
+
+/* Subtitle */
+.committees-main .subtitle {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+/* Gold divider */
+.committees-main .divider {
+  border-top: 1px solid #d4af37;
+  width: 85%;
+  margin: 50px auto;
+}
+
+/* Section heading (General Assemblies, etc.) */
+.committees-main h2 {
+  font-size: 28px;
+  color: #0b3c6f;
+  margin-bottom: 15px;
+}
+
+/* Section description */
+.committees-main p {
+  max-width: 720px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #374151;
+}
+
+/* Individual committee row */
+.committee {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 10px;
+  border-top: 1px solid #f3e6b3; /* soft gold */
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.committee:last-child {
+  border-bottom: 1px solid #f3e6b3;
+}
+
+/* Committee name */
+.committee span {
+  color: #0b3c6f;
+  font-weight: 500;
+}
+
+/* Plus icon */
+.committee .plus {
+  font-size: 22px;
+  color: #d4af37;
+  font-weight: bold;
+}
+
+/* Hover effect */
+.committee:hover span {
+  color: #d4af37;
+  transition: color 0.3s ease;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .committee {
+    font-size: 13px;
+  }
+}
