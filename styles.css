@@ -50,12 +50,25 @@ body {
   border-bottom: 1px solid #e5e7eb;
 }
 
-.site-title {
-  font-weight: 500;     
-  font-size: 20px;      
-  letter-spacing: 1px; 
-  color: #334155;        
+/* BRAND (LOGO + TEXT) */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between logo and text */
 }
+
+.brand-logo {
+  height: 28px;       /* small */
+  width: auto;
+}
+
+.site-title {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #334155;
+}
+
 
 .nav-links a {
   margin-left: 28px;
