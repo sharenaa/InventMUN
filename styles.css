@@ -51,7 +51,7 @@ body {
 }
 .panel-banner {
   width: 80%;
-  max-width: 280px;  
+  max-width: 220px;  
   border-radius: 10px;
 height: auto; }
 }
@@ -67,7 +67,7 @@ height: auto; }
 
 
 .brand-logo {
-  height: 65px
+  height: 67px
   opacity: 0.9; /* small and lowered opacity to seem smoother */
 }
 
