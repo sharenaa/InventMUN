@@ -738,3 +738,73 @@ nav a.active {
     font-size: 13px;
   }
 }
+/* ===== COMMITTEES PAGE (MATCH CONFERENCE) ===== */
+
+.committees-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 90px 40px;
+  text-align: center;
+}
+
+/* Page title */
+.committees-main h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  color: #0b3c6f;
+  margin-bottom: 15px;
+}
+
+/* Subtitle */
+.committees-main .subtitle {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+/* Divider */
+.committees-main .divider {
+  border-top: 1px solid #d4af37;
+  width: 85%;
+  margin: 50px auto 60px;
+}
+
+/* Committee rows (same as schedule blocks) */
+.committees-main .committee {
+  margin-bottom: 35px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f3e6b3;
+}
+
+/* Category label (like time) */
+.committees-main .committee .time {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+/* Committee name (like event) */
+.committees-main .committee .event {
+  font-size: 18px;
+  color: #0b3c6f;
+  font-weight: 500;
+}
+
+/* Hover accent */
+.committees-main .committee:hover .event {
+  color: #d4af37;
+  transition: color 0.3s ease;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .committees-main {
+    padding: 60px 25px;
+  }
+
+  .committees-main .committee .event {
+    font-size: 16px;
+  }
+}
