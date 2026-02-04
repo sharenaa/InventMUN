@@ -58,9 +58,10 @@ body {
 }
 
 .brand-logo {
-  height: 28px;       /* small */
-  width: auto;
+  height: 24px;
+  opacity: 0.9; /* small and lowered opacity to seem smoother */
 }
+
 
 .site-title {
   font-weight: 500;
@@ -500,7 +501,7 @@ section p strong {
   }
 }
 
-/* ===== SCHEDULE PAGE (YMUN STYLE) ===== */
+/* ===== SCHEDULE PAGE ===== */
 
 .schedule-main {
   max-width: 800px;
