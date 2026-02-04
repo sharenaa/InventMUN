@@ -312,3 +312,39 @@ section h2 {
 section p strong {
   color: #0b3c6f; /* blue */
 }
+
+/* ---------- CONTACT PAGE ONLY ---------- */
+
+.contact-page main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.contact-page h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: #0b3c6f;
+  margin-bottom: 15px;
+}
+
+.contact-page .subtitle {
+  font-style: italic;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+.contact-page section {
+  text-align: left;
+}
+
+.contact-page section p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.contact-page section p strong {
+  color: #0b3c6f;
+}
