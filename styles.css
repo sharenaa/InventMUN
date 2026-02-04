@@ -443,3 +443,46 @@ section p strong {
     text-align: center;
   }
 }
+/* ===== CONTACT PAGE BOTTOM (3-COLUMN) ===== */
+
+.contact-bottom {
+  border-top: 1px solid #d4af37;
+  margin-top: 80px;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  text-align: left;
+}
+
+.contact-box h4 {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #0b3c6f;
+  margin-bottom: 20px;
+}
+
+.contact-box p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #374151;
+}
+
+.contact-box a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile fix */
+@media (max-width: 900px) {
+  .contact-bottom {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
