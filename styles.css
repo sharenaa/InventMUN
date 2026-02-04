@@ -855,3 +855,46 @@ nav a.active {
   </div>
 
 </main>
+/* ===== REGISTRATION PAGE – ACCENTS ONLY ===== */
+
+.registration-main {
+  background-color: #ffffff;
+}
+
+/* Title */
+.registration-main h1 {
+  color: #0b3c6f; /* navy */
+  letter-spacing: 1px;
+}
+
+/* Paragraph text */
+.registration-main p {
+  color: #374151;
+}
+
+/* Gold divider */
+.registration-main .divider {
+  border-top: 1px solid #d4af37;
+  width: 85%;
+  margin: 50px auto;
+}
+
+/* Emails emphasis */
+.registration-main strong {
+  color: #0b3c6f;
+}
+
+/* Registration platform link */
+.registration-main a {
+  color: #0b3c6f;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid #d4af37;
+  padding-bottom: 2px;
+}
+
+.registration-main a:hover {
+  color: #d4af37;
+  border-bottom-color: #0b3c6f;
+  transition: all 0.3s ease;
+}
