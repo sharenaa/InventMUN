@@ -287,6 +287,63 @@ height: auto; }
   border-bottom-color: var(--gold-accent);
 }
 
+/* ===== REGISTRATION PAGE (MATCH CONFERENCE STYLE) ===== */
+
+.registration-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 90px 40px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* Title */
+.registration-main h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  color: #0b3c6f;
+  margin-bottom: 10px;
+}
+
+/* Body text */
+.registration-main p {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+/* Gold divider (EXACT like schedule) */
+.registration-main .divider {
+  border-top: 1px solid #d4af37;
+  width: 85%;
+  margin: 50px auto 60px;
+}
+
+/* Emphasis text (emails, Open!) */
+.registration-main strong {
+  color: #0b3c6f;
+}
+
+/* Registration platform link — text style, not button */
+.registration-main a {
+  font-size: 16px;
+  color: #0b3c6f;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.registration-main a:hover {
+  color: #d4af37;
+  transition: color 0.3s ease;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .registration-main {
+    padding: 60px 25px;
+  }
+}
 /* =========================
    RESPONSIVE
 ========================= */
