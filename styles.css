@@ -486,3 +486,59 @@ section p strong {
     gap: 40px;
   }
 }
+
+/* ===== SCHEDULE PAGE (YMUN STYLE) ===== */
+
+.schedule-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 90px 40px;
+  text-align: center;
+}
+
+.schedule-main h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  color: #0b3c6f;
+  margin-bottom: 10px;
+}
+
+.schedule-note {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+.schedule-date {
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #374151;
+  margin-bottom: 50px;
+}
+
+/* Schedule rows */
+.schedule-block {
+  margin-bottom: 35px;
+}
+
+.schedule-block .time {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+.schedule-block .event {
+  font-size: 18px;
+  color: #0b3c6f;
+  font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .schedule-main {
+    padding: 60px 25px;
+  }
+}
