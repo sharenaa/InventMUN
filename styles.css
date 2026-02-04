@@ -348,3 +348,45 @@ section p strong {
 .contact-page section p strong {
   color: #0b3c6f;
 }
+
+
+.contact-page main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  text-align: left;
+}
+
+.contact-page h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  color: #0b3c6f;
+  margin-bottom: 10px;
+}
+
+.contact-page p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.contact-page p strong {
+  color: #0b3c6f;
+}
+
+.contact-page a {
+  color: #d4af37;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-page a:hover {
+  text-decoration: underline;
+}
+
+/* Section spacing */
+.contact-page section {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #d4af37;
+}
