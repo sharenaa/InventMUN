@@ -613,3 +613,40 @@ section p strong {
     font-size: 17px;
   }
 }
+/* ===== NAV BAR FIX ===== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #0b3c6f;
+}
+
+nav a {
+  margin-left: 22px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #374151;
+}
+
+nav a:hover {
+  color: #0b3c6f;
+}
+
+/* Active page */
+nav a.active {
+  color: #0b3c6f;
+  font-weight: 600;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 4px;
+}
