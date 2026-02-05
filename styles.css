@@ -127,7 +127,7 @@ height: auto; }
   background: linear-gradient(
     160deg,
     var(--blue-soft),
-    #eef2ff
+    #3E518C
   );
   padding: 50px;
   border-radius: var(--radius-lg);
