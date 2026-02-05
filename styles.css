@@ -124,10 +124,8 @@ height: auto; }
 }
 
 .hero-panel {
-  background: linear-gradient(
-    160deg,
-    var(--blue-soft),
-    #3E518C
+  background-color: #324D8F;
+
   );
   padding: 50px;
   border-radius: var(--radius-lg);
