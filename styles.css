@@ -888,30 +888,7 @@ nav a.active {
     font-size: 16px;
   }
 }
-<main class="registration-main">
 
-  <h1>Registration</h1>
-
-  <p class="registration-note">
-    Thank you for your interest in InventMUN.
-  </p>
-
-  <div class="divider"></div>
-
-  <div class="registration-block">
-    <p class="label">Status</p>
-    <p class="text">Registration is currently closed.</p>
-  </div>
-
-  <div class="registration-block">
-    <p class="label">Questions</p>
-    <p class="text">
-      Contact us at
-      <a href="mailto:inventmun@gmail.com">inventmun@gmail.com</a>
-    </p>
-  </div>
-
-</main>
 /* ===== REGISTRATION PAGE – ACCENTS ONLY ===== */
 
 .registration-main {
