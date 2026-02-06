@@ -9,19 +9,125 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Main CSS -->
+  <!-- CSS -->
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* PASSWORD GATE */
+    .password-wrapper {
+      min-height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .password-box {
+      background: #ffffff;
+      padding: 50px;
+      border-radius: 20px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    .password-box h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    .password-box p {
+      font-size: 15px;
+      color: #475569;
+      margin-bottom: 30px;
+    }
+
+    .password-box input {
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      border: 1px solid #cbd5e1;
+      font-size: 15px;
+      margin-bottom: 16px;
+      outline: none;
+    }
+
+    .password-box button {
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      border: none;
+      background: #324D8F;
+      color: white;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.25s ease;
+    }
+
+    .password-box button:hover {
+      transform: scale(1.02);
+      opacity: 0.95;
+    }
+
+    .error {
+      color: #b91c1c;
+      font-size: 14px;
+      margin-top: 12px;
+      display: none;
+    }
+
+    /* HIDDEN CONTENT */
+    #protected-content {
+      display: none;
+    }
+
+    /* TOPIC GUIDES STYLING */
+    .topic-guides {
+      max-width: 900px;
+      margin: 60px auto;
+    }
+
+    .committee-block {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 18px;
+      margin-bottom: 40px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    .committee-block h2 {
+      font-size: 26px;
+      margin-bottom: 18px;
+      color: #0f172a;
+    }
+
+    .pdf-link {
+      display: inline-block;
+      font-size: 15px;
+      color: #324D8F;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(50, 77, 143, 0.4);
+      padding-bottom: 2px;
+      transition: 0.25s ease;
+    }
+
+    .pdf-link:hover {
+      transform: scale(1.03);
+      border-bottom-color: #324D8F;
+    }
+  </style>
 </head>
 
 <body>
 
-
-  <!-- Navigation -->
+<!-- NAV -->
 <header class="navbar">
- <div class="brand">
-  <img src="logo.png" alt="InventMUN Logo" class="brand-logo">
-</div>
+  <div class="brand">
+    <img src="logo.png" alt="InventMUN Logo" class="brand-logo">
+  </div>
 
   <nav class="nav-links">
     <a href="index.html">Welcome</a>
@@ -32,55 +138,64 @@
     <a href="contactus.html">Contact Us</a>
   </nav>
 </header>
-<main class="schedule-main">
 
-  <h1>InventMUN Topic Guides</h1>
+<!-- PASSWORD GATE -->
+<div class="password-wrapper" id="password-gate">
+  <div class="password-box">
+    <h1>Topic Guides Access</h1>
+    <p>
+      These materials are restricted to registered delegates and advisors.
+    </p>
 
-  <p class="schedule-note">
-    Below are the Topic Guides as followed.
+    <input type="password" id="passwordInput" placeholder="Enter access password">
+    <button onclick="checkPassword()">Enter</button>
+
+    <div class="error" id="errorMessage">
+      Incorrect password. Please try again.
+    </div>
+  </div>
+</div>
+
+<!-- PROTECTED CONTENT -->
+<main id="protected-content">
+
+  <h1 style="text-align:center;">InventMUN Topic Guides</h1>
+
+  <p class="schedule-note" style="text-align:center;">
+    Official committee topic guides for InventMUN.
   </p>
 
   <div class="divider"></div>
 
-  <div class="divider"></div>
+  <section class="topic-guides">
 
-<section class="topic-guides">
+    <div class="committee-block">
+      <h2>United Nations General Assembly</h2>
+      <a class="pdf-link" href="unga_topic_guide.pdf" target="_blank">
+        📄 Topic Guide
+      </a>
+    </div>
 
-  <!-- COMMITTEE 1 -->
-  <div class="committee-block">
-    <h2>United Nations General Assembly</h2>
+    <div class="committee-block">
+      <h2>Security Council</h2>
+      <a class="pdf-link" href="security_council_topic_guide.pdf" target="_blank">
+        📄 Topic Guide
+      </a>
+    </div>
 
-    <a class="pdf-link" href="unga_topic_guide.pdf" target="_blank">
-      📄 Topic Guide
-    </a>
-  </div>
+    <div class="committee-block">
+      <h2>Historical Crisis Committee</h2>
+      <a class="pdf-link" href="crisis_committee_topic_guide.pdf" target="_blank">
+        📄 Topic Guide
+      </a>
+    </div>
 
-  <!-- COMMITTEE 2 -->
-  <div class="committee-block">
-    <h2>Security Council</h2>
-
-    <a class="pdf-link" href="security_council_topic_guide.pdf" target="_blank">
-      📄 Topic Guide
-    </a>
-  </div>
-
-  <!-- COMMITTEE 3 -->
-  <div class="committee-block">
-    <h2>Historical Crisis Committee</h2>
-
-    <a class="pdf-link" href="crisis_committee_topic_guide.pdf" target="_blank">
-      📄 Topic Guide
-    </a>
-  </div>
-
-</section>
+  </section>
 
 </main>
 
 <footer class="site-footer">
   <div class="footer-grid">
-
-    <!-- Conference Info -->
     <div class="footer-column">
       <h4>Conference Information</h4>
       <p>March 28, 2026</p>
@@ -90,39 +205,44 @@
       </p>
     </div>
 
-    <!-- Contact -->
     <div class="footer-column">
-      <h4>Contact Us</h4>
+      <h4>Contact</h4>
       <p>
-        Secretary-General:
         <a href="mailto:inventmun@gmail.com">inventmun@gmail.com</a>
       </p>
       <p>
-        Advisor Inquiries:
         <a href="mailto:advisor@inventmun.org">advisor@inventmun.org</a>
       </p>
     </div>
 
-    <!-- Affiliation / Links -->
     <div class="footer-column">
-      <h4>Thomas A. Edison CTE HS</h4>
+      <h4>Affiliation</h4>
       <p>
         <a href="https://www.schools.nyc.gov" target="_blank">
           NYC Department of Education
         </a>
       </p>
-      <p>
-        Career & Technical Education Programs
-      </p>
-
     </div>
-
   </div>
+
   <center>
-  <p> © 2026 InventMUN. Website designed by Sharena Sharif & Nataly Parache</p>
-    </center>
+    <p>© 2026 InventMUN. Website designed by Sharena Sharif & Nataly Parache</p>
+  </center>
 </footer>
 
+<script>
+  function checkPassword() {
+    const input = document.getElementById("passwordInput").value;
+    const error = document.getElementById("errorMessage");
+
+    if (input === "edisoninventors") {
+      document.getElementById("password-gate").style.display = "none";
+      document.getElementById("protected-content").style.display = "block";
+    } else {
+      error.style.display = "block";
+    }
+  }
+</script>
 
 </body>
 </html>
