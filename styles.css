@@ -125,9 +125,21 @@ height: auto; }
 }
 
 .hero-panel {
-  background-color: #324D8F;
+  position: relative;
+  background:
+    linear-gradient(rgba(50, 77, 143, 0.9), rgba(50, 77, 143, 0.9)),
+    url("blueprint.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
 
-  );
+  transition: transform 0.25s ease;
+}
+
+.hero-panel:hover {
+  transform: scale(1.02);
+}
+
   padding: 50px;
   border-radius: var(--radius-lg);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
