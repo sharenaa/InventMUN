@@ -1205,3 +1205,26 @@ nav a.active {
   border-bottom-color: #324D8F;
 }
 
+.hero-note {
+  margin-top: 25px;
+}
+
+.hero-note p {
+  font-size: 14px;
+  color: #475569;
+}
+
+.hero-note a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(37, 99, 235, 0.4);
+  padding-bottom: 2px;
+  transition: 0.2s;
+}
+
+.hero-note a:hover {
+  border-bottom-color: #2563eb;
+}
+
+
