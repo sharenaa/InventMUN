@@ -1204,3 +1204,37 @@ nav a.active {
   padding: 14px;
   border-radius:
 
+     .topic-guides {
+  max-width: 900px;
+  margin: 60px auto;
+}
+
+.committee-block {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  margin-bottom: 40px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.committee-block h2 {
+  font-size: 26px;
+  margin-bottom: 18px;
+  color: #0f172a;
+}
+
+.pdf-link {
+  display: inline-block;
+  font-size: 15px;
+  color: #324D8F;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(50, 77, 143, 0.4);
+  padding-bottom: 2px;
+  transition: 0.25s ease;
+}
+
+.pdf-link:hover {
+  transform: scale(1.03);
+  border-bottom-color: #324D8F;
+}
+
