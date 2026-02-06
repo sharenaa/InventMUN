@@ -1075,3 +1075,6 @@ nav a.active {
   text-decoration: underline;
   cursor: pointer;
 }
+<p class="email">
+  <a href="mailto:secretarygeneral@ymun.org">secretarygeneral@ymun.org</a>
+</p>
