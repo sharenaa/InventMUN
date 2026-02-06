@@ -126,16 +126,28 @@ height: auto; }
 
 .hero-panel {
   position: relative;
-  background:
-    linear-gradient(rgba(50, 77, 143, 0.9), rgba(50, 77, 143, 0.9)),
-    url("blueprint.png");
-  background-size: cover;
-  background-position: center;
+  background-color: #324D8F;
   color: white;
-
-  transition: transform 0.25s ease;
+  overflow: hidden;
 }
 
+/* image overlay */
+.hero-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("edison.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+/* keep text above image */
+.hero-panel > * {
+  position: relative;
+  z-index: 1;
+}
 .hero-panel:hover {
   transform: scale(1.02);
 }
