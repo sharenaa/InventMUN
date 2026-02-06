@@ -78,7 +78,40 @@
       Committee assignments will be released prior to the conference.
     </p>
       <br>
-       <h1>Topic Guides</h1>
+       <!-- TOPIC GUIDES ACCESS SECTION -->
+<section class="topic-guides-section">
+  <div class="topic-guides-box">
+    <h1>Topic Guides</h1>
+    <p>
+      Access to InventMUN Topic Guides is restricted.<br>
+      Please enter the provided password to continue.
+    </p>
+
+    <input
+      type="password"
+      id="topicPassword"
+      placeholder="Enter password"
+    >
+
+    <button onclick="checkPassword()">Enter</button>
+
+    <p id="passwordError" class="password-error"></p>
+  </div>
+</section>
+
+<script>
+  function checkPassword() {
+    const correctPassword = "edisoninventors";
+    const enteredPassword = document.getElementById("topicPassword").value;
+    const errorText = document.getElementById("passwordError");
+
+    if (enteredPassword === correctPassword) {
+      window.location.href = "topicguides.html";
+    } else {
+      errorText.textContent = "Incorrect password. Please try again.";
+    }
+  }
+</script>
 
       <br>
       <h1>InventMUN COMMITTEE POLICIES</h1>
