@@ -984,3 +984,83 @@ nav a.active {
   margin: 0 auto;
   max-width: 700px;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+  padding: 90px 70px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* Title */
+.about-title {
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+
+/* Gold Divider */
+.gold-divider {
+  width: 80px;
+  height: 3px;
+  background-color: #c9a24d;
+  margin: 0 auto 70px;
+}
+
+/* Grid Layout */
+.secretariat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 70px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Member Card */
+.member {
+  padding-top: 25px;
+  border-top: 2px solid #c9a24d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Role */
+.role {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+/* Name */
+.name {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* Image */
+.member img {
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 18px;
+}
+
+/* Bio */
+.bio {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  padding: 0 10px;
+}
