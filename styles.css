@@ -1075,6 +1075,79 @@ nav a.active {
   text-decoration: underline;
   cursor: pointer;
 }
-<p class="email">
-  <a href="mailto:secretarygeneral@ymun.org">secretarygeneral@ymun.org</a>
-</p>
+.about {
+  padding: 90px 60px;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Title */
+.about-title {
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+
+/* Gold divider */
+.gold-divider {
+  width: 80px;
+  height: 3px;
+  background-color: #c9a24d;
+  margin: 0 auto 70px;
+}
+
+/* Grid */
+.secretariat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 70px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Card */
+.member {
+  padding-top: 25px;
+  border-top: 2px solid #c9a24d;
+}
+
+/* Role */
+.role {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+/* Name */
+.name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Email */
+.email a {
+  font-size: 13px;
+  color: #c9a24d;
+  text-decoration: none;
+}
+
+.email a:hover {
+  text-decoration: underline;
+}
+
+/* Image */
+.member img {
+  width: 100%;
+  margin: 18px 0;
+  border-radius: 3px;
+}
+
+/* Bio */
+.bio {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
