@@ -1064,3 +1064,14 @@ nav a.active {
   color: #555;
   padding: 0 10px;
 }
+.email {
+  font-size: 13px;
+  color: #c9a24d;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.email:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
