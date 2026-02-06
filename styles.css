@@ -127,6 +127,7 @@ height: auto; }
 .hero-panel {
   position: relative;
   background-color: #324D8F;
+   border-radius: 16px;
   color: white;
   overflow: hidden;
 }
@@ -139,7 +140,8 @@ height: auto; }
   background-image: url("edison.png");
   background-size: cover;
   background-position: center;
-  opacity: 0.75;
+  opacity: 0.4;
+   border-radius: 16px;
   pointer-events: none;
 }
 
