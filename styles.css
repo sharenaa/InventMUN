@@ -1260,3 +1260,73 @@ nav a.active {
 .hero-note a:hover {
   border-bottom-color: #2563eb;
 }
+
+/* ===== CHAIRS SECTION ===== */
+.chairs {
+  padding: 90px 60px;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Title */
+.section-title {
+  font-size: 28px;
+  letter-spacing: 5px;
+  color: #2f3b46;
+}
+
+/* Divider */
+.gold-divider {
+  width: 70px;
+  height: 3px;
+  background-color: #c9a24d;
+  margin: 18px auto 60px;
+}
+
+/* Grid */
+.chairs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Card */
+.chair-card {
+  border: 1px solid #e5e5e5;
+  padding: 35px 30px;
+  background-color: #fff;
+}
+
+/* Committee */
+.committee {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+/* Name */
+.name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Email */
+.email a {
+  font-size: 13px;
+  color: #c9a24d;
+  text-decoration: none;
+}
+
+.email a:hover {
+  text-decoration: underline;
+}
+
+/* Bio */
+.bio {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #555;
+}
