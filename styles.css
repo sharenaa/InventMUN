@@ -1330,3 +1330,8 @@ nav a.active {
   font-size: 14px;
   color: #555;
 }
+
+.chairs-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
