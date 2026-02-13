@@ -1428,3 +1428,60 @@ nav a.active {
   line-height: 1.6;
   color: #555;
 }
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #0d1b2a;
+    color: white;
+    text-align: center;
+}
+
+/* Logo */
+.logo-container {
+    padding: 30px 0;
+}
+
+.logo-container img {
+    width: 120px;
+}
+
+/* Title */
+.page-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: gold;
+}
+
+/* Sponsors Section */
+.sponsors-container {
+    width: 70%;
+    margin: auto;
+    background-color: #1b263b;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Each Sponsor */
+.sponsor-card {
+    padding: 20px 0;
+}
+
+.sponsor-card h2 {
+    margin: 0;
+    font-size: 22px;
+    color: white;
+}
+
+.sponsor-card p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #cbd5e1;
+}
+
+/* Gold Divider */
+.divider {
+    height: 2px;
+    background-color: gold;
+    margin: 20px 0;
+}
