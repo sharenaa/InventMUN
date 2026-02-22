@@ -271,7 +271,17 @@
 </section>
 
   
-  
+  <script>
+function toggleInfo(clickedCard) {
+  document.querySelectorAll('.secretariat-card').forEach(card => {
+    if (card !== clickedCard) {
+      card.classList.remove('active');
+    }
+  });
+
+  clickedCard.classList.toggle('active');
+}
+</script>
   
  <!-- FOOTER -->
 <footer class="site-footer">
