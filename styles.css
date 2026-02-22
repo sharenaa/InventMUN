@@ -1532,3 +1532,45 @@ body {
 .member p {
     color: #666;
 }
+
+.secretariat-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.secretariat-card {
+  position: relative;
+  width: 260px;
+  cursor: pointer;
+}
+
+.secretariat-card img {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+
+.info-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  color: white;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.secretariat-card.active .info-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
