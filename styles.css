@@ -1574,3 +1574,185 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
+
+/* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background-color: #ffffff;
+  color: #2c2c2c;
+  line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.brand-logo {
+  height: 55px;
+}
+
+.nav-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #2c2c2c;
+}
+
+.nav-links a:hover {
+  color: #c8a64d;
+}
+
+/* ===== ABOUT / PAGE SECTION ===== */
+.about {
+  padding: 90px 5%;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 40px;
+  letter-spacing: 6px;
+  font-weight: 600;
+}
+
+.gold-divider {
+  width: 70px;
+  height: 3px;
+  background-color: #c8a64d;
+  margin: 20px auto 60px;
+}
+
+/* ===== SECRETARIAT GRID (USED BY SPONSORS TOO) ===== */
+.secretariat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== MEMBER / SPONSOR CARD ===== */
+.member {
+  text-align: center;
+}
+
+/* Role / Category */
+.role {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #7a7a7a;
+  margin-bottom: 10px;
+}
+
+/* Name / Sponsor Name */
+.name {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Email (used on Secretariat page) */
+.email {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+/* Bio / Description */
+.bio {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+/* ===== SPONSOR LOGO POP EFFECT ===== */
+.member img {
+  width: 160px;
+  height: auto;
+  margin: 25px auto;
+  display: block;
+
+  padding: 18px;
+  background-color: #ffffff;
+  border-radius: 14px;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 60px 5% 30px;
+  margin-top: 100px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  color: #c8a64d;
+}
+
+.footer-column p,
+.footer-column a {
+  font-size: 14px;
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.site-footer center {
+  margin-top: 40px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .secretariat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .secretariat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    margin-top: 15px;
+  }
+}
