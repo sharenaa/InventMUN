@@ -1883,3 +1883,50 @@ body {
   gap: 25px;
   flex-wrap: nowrap;   
 }
+
+   .dropdown {
+  position: relative;
+}
+
+/* Button */
+.dropbtn {
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-family: inherit;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Floating panel */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background-color: #0f3a66;
+  min-width: 220px;
+  padding: 14px 0;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  z-index: 9999; 
+}
+
+/* Links */
+.dropdown-content a {
+  display: block;
+  padding: 10px 22px;
+  font-size: 13px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255,255,255,0.12);
+}
+
+.dropdown.active .dropdown-content {
+  display: block;
+}
