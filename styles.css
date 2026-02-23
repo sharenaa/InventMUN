@@ -2004,18 +2004,117 @@ body {
   display: block;
 }
 
-   <div class="dropdown">
-  <button class="dropbtn">Committees</button>
-  <div class="dropdown-content">
-    <a href="committee-policies.html">Committee Policies</a>
-    <a href="topic-guides.html">Topic Guides</a>
-  </div>
-</div>
+   /* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  border-bottom: 1px solid #eee;
+}
 
-<div class="dropdown">
-  <button class="dropbtn">Conference</button>
-  <div class="dropdown-content">
-    <a href="delegate-resources.html">Delegate Resources</a>
-    <a href="dress-code.html">Dress Code</a>
-  </div>
-</div>
+.brand-logo {
+  height: 55px;
+}
+
+/* Push page down under fixed nav */
+body {
+  margin: 0;
+  padding-top: 110px;
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #6b7280;
+}
+
+.nav-links a:hover {
+  color: #1f4fd8;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0;
+}
+
+.dropbtn:hover {
+  color: #1f4fd8;
+}
+
+/* Floating Yale-style panel */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: #0f3a66;
+  min-width: 240px;
+  padding: 16px 0;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  z-index: 99999;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 24px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255,255,255,0.12);
+}
+
+/* Click open */
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdown-content {
+    position: static;
+    background: transparent;
+    box-shadow: none;
+    padding-left: 15px;
+  }
+
+  .dropdown-content a {
+    color: #2c2c2c;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+}
