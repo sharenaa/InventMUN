@@ -1756,3 +1756,16 @@ body {
     margin-top: 15px;
   }
 }
+.member img {
+  width: 120px;   /* 🔹 smaller logo */
+  height: auto;
+  margin: 22px auto;
+  display: block;
+
+  padding: 14px;  /* 🔹 reduced padding to match */
+  background-color: #ffffff;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
