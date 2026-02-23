@@ -1753,17 +1753,18 @@ body {
     margin-top: 15px;
   }
 
+
 .member img {
-  max-width: 260px;   /* controls wide logos */
-  width: 100%;
-  height: auto;
+  width: 180px !important;
+  max-width: 180px !important;
+  height: auto !important;
 
-  margin: 25px auto;
   display: block;
+  margin: 30px auto;
 
-  padding: 12px;
-  background-color: #ffffff;
-  border-radius: 12px;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 10px;
 
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
