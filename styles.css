@@ -1930,3 +1930,21 @@ body {
 .dropdown.active .dropdown-content {
   display: block;
 }
+
+   @media (max-width: 900px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdown-content {
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    padding-left: 15px;
+  }
+
+  .dropdown-content a {
+    color: #2c2c2c;
+  }
+}
