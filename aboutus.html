@@ -341,15 +341,21 @@ function toggleInfo(clickedCard) {
     </center>
 </footer>
 <script>
-  const dropdowns = document.querySelectorAll('.dropdown');
-
-  dropdowns.forEach(dropdown => {
-    const button = dropdown.querySelector('.dropbtn');
-
-    button.addEventListener('click', (e) => {
+  document.querySelectorAll('.dropbtn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
       e.stopPropagation();
 
-      dropdowns.forEach(d => {
-        if (d !== dropdown) d.classList.remove('active
+      document.querySelectorAll('.dropdown')
+        .forEach(d => d.classList.remove('active'));
+
+      btn.parentElement.classList.add('active');
+    });
+  });
+
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.dropdown')
+      .forEach(d => d.classList.remove('active'));
+  });
+</script>
 </body>
 </html>
