@@ -2,22 +2,21 @@
 <html lang="en">
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <title>Committees | INVENTMUN</title>
-  <!-- FAVICON -->
-<link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- Navigation -->
- <header class="navbar">
+<!-- Navigation -->
+<header class="navbar">
   <div class="brand">
-  <img src="logo.png" alt="InventMUN Logo" class="brand-logo">
-</div>
+    <img src="logo.png" alt="InventMUN Logo" class="brand-logo">
+  </div>
 
   <nav class="nav-links">
     <a href="index.html">Welcome</a>
@@ -30,71 +29,121 @@
   </nav>
 </header>
 
+<!-- Main Content -->
+<main class="committees-main">
+<center>
 
-  <!-- Main Content -->
-  <main>
-    <main class="committees-main">
-    <center>
-    <h1>InventMUN XIV Committees</h1>
+<h1>InventMUN XIV Committees</h1>
 
-    <p>
-      InventMUN offers a variety of committees designed to challenge delegates
-      to think critically, collaborate effectively, and engage in meaningful debate.
-    </p>
+<p>
+  InventMUN offers a variety of committees designed to challenge delegates
+  to think critically, collaborate effectively, and engage in meaningful debate.
+</p>
 
-    <h3>General Assembly</h3>
-    <p>
-      Focuses on global issues such as international security, human rights,
-      and sustainable development.
-    </p>
-      <div class="committee">
+<h3>General Assembly</h3>
+<p>
+  Focuses on global issues such as international security, human rights,
+  and sustainable development.
+</p>
+
+<div class="committee">
   <p class="category">Intermediate</p>
   <p class="name">UNCLOS - United Nations Convention Of Laws Of The Seas</p>
-      </div>
+</div>
 
-      <div class="committee">
+<div class="committee">
   <p class="category">Beginner</p>
   <p class="name">UNOOSA – United Nations Office For Outer Space Affairs</p>
-    </div>
-
-      <div class="committee">
-  <p class="category">Beginner</p>
-  <p class="name">UNEP – United Nations Of Enviormental Programming</p>
 </div>
-      
- <h3>Crisis Committees</h3>
-    <p>
-      Fast-paced and interactive committees where delegates must respond
-      quickly to evolving situations.
-    </p>
-      <div class="committee">
+
+<div class="committee">
+  <p class="category">Beginner</p>
+  <p class="name">UNEP – United Nations Of Environmental Programming</p>
+</div>
+
+<h3>Crisis Committees</h3>
+<p>
+  Fast-paced and interactive committees where delegates must respond
+  quickly to evolving situations.
+</p>
+
+<div class="committee">
   <p class="category">Beginner</p>
   <p class="name">Grey's Anatomy</p>
 </div>
-      <div class="committee">
+
+<div class="committee">
   <p class="category">Beginner</p>
   <p class="name">Mayor's First Day</p>
 </div>
-    <p>
-      Committee assignments will be released prior to the conference.
-    </p>
-      <br>
-<!-- TOPIC GUIDES ACCESS SECTION -->
-<section class="topic-guides-section">
-  <div class="topic-guides-box">
-    <h1>Topic Guides</h1>
-    <p>
-      Click below to access the InventMUN Topic Guides.
+
+<p>
+  Committee assignments will be released prior to the conference.
+</p>
+
+<br><br>
+
+<!-- TOPIC GUIDES SECTION -->
+<section style="
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+">
+
+  <div style="
+    background: #ffffff;
+    padding: 60px 50px;
+    border-radius: 18px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  ">
+
+    <h2 style="
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #111827;
+    ">
+      Topic Guides
+    </h2>
+
+    <p style="
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      color: #4b5563;
+      margin-bottom: 35px;
+      line-height: 1.6;
+    ">
+      Access the official InventMUN XIV topic guides and prepare for debate.
     </p>
 
-    <button onclick="window.location.href='topicguides.html'">
-      Enter
-    </button>
+    <a href="topicguides.html" style="
+      display: inline-block;
+      padding: 14px 36px;
+      background-color: #111827;
+      color: white;
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    "
+    onmouseover="this.style.backgroundColor='#1f2937'; this.style.transform='scale(1.05)'"
+    onmouseout="this.style.backgroundColor='#111827'; this.style.transform='scale(1)'">
+      Enter Topic Guides →
+    </a>
+
   </div>
 </section>
-      
-      <br>
-      <section class="policies-section">
+
+<br><br>
+
+<!-- Committee Policies -->
 <section style="max-width: 900px; margin: 80px auto; padding: 0 20px;">
   <h2 style="font-family: 'Playfair Display', serif; margin-bottom: 25px;">
     Committee Policies
@@ -132,22 +181,11 @@
       caucuses for working paper and resolution writing.
       Devices may not be used during moderated caucuses for any purpose.
     </p>
-    <p>
-      Delegates may only work on working papers and resolutions during
-      committee sessions. Work completed outside of committee will result
-      in disqualification of the document and the delegate from awards.
-    </p>
 
     <h3>AI & Academic Integrity Policy</h3>
     <p>
       The use of artificial intelligence, plagiarism, or pre-written
       materials is strictly prohibited at InventMUN.
-      This applies to preparation, speeches, crisis notes, working papers,
-      and resolutions.
-    </p>
-    <p>
-      Any materials found to have been created using AI will be confiscated,
-      and the delegate may be deemed ineligible for awards.
     </p>
 
     <h3>Behavior Policy</h3>
@@ -157,31 +195,19 @@
       Bullying, discrimination, harassment, or vulgar language will not
       be tolerated.
     </p>
-    <p>
-      Repeated or severe violations may result in removal from committee
-      or the conference at the discretion of the Secretariat.
-    </p>
 
   </div>
 </section>
 
+</center>
+</main>
 
-      
-    
-    
-      
-      </center>
-  </main>
+<hr>
 
-  <hr>
-
-</body>
-</html>
-
+<!-- Footer -->
 <footer class="site-footer">
   <div class="footer-grid">
 
-    <!-- Conference Info -->
     <div class="footer-column">
       <h4>Conference Information</h4>
       <p>March 28, 2026</p>
@@ -191,7 +217,6 @@
       </p>
     </div>
 
-    <!-- Contact -->
     <div class="footer-column">
       <h4>Contact Us</h4>
       <p>
@@ -204,7 +229,6 @@
       </p>
     </div>
 
-    <!-- Affiliation / Links -->
     <div class="footer-column">
       <h4>Thomas A. Edison CTE HS</h4>
       <p>
@@ -218,11 +242,11 @@
     </div>
 
   </div>
-  <center>
-  <p> © 2026 InventMUN. Website designed by Sharena Sharif & Nataly Parache</p>
-    </center>
-</footer>
 
+  <center>
+    <p>© 2026 InventMUN. Website designed by Sharena Sharif & Nataly Parache</p>
+  </center>
+</footer>
 
 </body>
 </html>
