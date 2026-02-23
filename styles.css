@@ -1825,3 +1825,54 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+   /* ===== DROPDOWN ===== */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-family: inherit;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dropbtn:hover {
+  color: #1f4fd8;
+}
+
+/* Panel */
+.dropdown-panel {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: #0f3a6d; /*  blue */
+  min-width: 260px;
+  padding: 20px 0;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  z-index: 999;
+}
+
+/* Links inside panel */
+.dropdown-panel a {
+  display: block;
+  padding: 12px 24px;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.dropdown-panel a:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* Active state */
+.dropdown.active .dropdown-panel {
+  display: block;
+}
