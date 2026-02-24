@@ -1792,20 +1792,19 @@ body {
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   background: #ffffff;
   z-index: 9999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 70px;
+  padding: 20px 60px;
   border-bottom: 1px solid #e5e7eb;
 }
 
 body {
   margin: 0;
-  padding-top: 120px;
+  padding-top: 110px;
 }
 
 .brand-logo {
@@ -1816,48 +1815,42 @@ body {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 32px;
 }
 
 .nav-links a,
-.nav-link {
+.nav-item span {
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #6b7280;
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.nav-links a:hover,
-.nav-link:hover {
-  color: #2563eb;
-}
-
-/* ===== DROPDOWN ===== */
-.dropdown {
+/* ===== DROPDOWN STRUCTURE ===== */
+.nav-item {
   position: relative;
 }
 
-/* YALE-STYLE PANEL */
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 48px;
+  top: 45px;
   left: 0;
 
-  background-color: #0b3a6e;
-  min-width: 280px;
-  padding: 22px 0;
+  background-color: #0b3a6e; /*  navy */
+  min-width: 260px;
+  padding: 18px 0;
 
   box-shadow: 0 18px 45px rgba(0,0,0,0.35);
   z-index: 10000;
 }
 
-/* Links inside panel */
+/* Dropdown links */
 .dropdown-menu a {
   display: block;
-  padding: 10px 28px;
+  padding: 10px 26px;
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1869,94 +1862,7 @@ body {
   background-color: rgba(255,255,255,0.12);
 }
 
-/* SHOW ON HOVER */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-/* ===== NAVBAR ===== */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #ffffff;
-  z-index: 10000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-body {
-  margin: 0;
-  padding-top: 120px;
-}
-
-.brand-logo {
-  height: 52px;
-}
-
-/* ===== NAV LINKS ===== */
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: nowrap;
-}
-
-.nav-links a,
-.dropbtn {
-  font-size: 15px;
-  color: #6b7280;
-  background: none;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  font-family: inherit;
-}
-
-.nav-links a:hover,
-.dropbtn:hover {
-  color: #2563eb;
-}
-
-/* ===== DROPDOWN ===== */
-.dropdown {
-  position: relative;
-}
-
-/* THIS MATCHES YOUR HTML */
-.dropdown-panel {
-  display: none;
-  position: absolute;
-  top: 45px;
-  left: 0;
-
-  background-color: #0f3a66;
-  min-width: 240px;
-  padding: 16px 0;
-
-  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
-  z-index: 99999;
-}
-
-/* Links inside dropdown */
-.dropdown-panel a {
-  display: block;
-  padding: 10px 24px;
-  font-size: 13px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.dropdown-panel a:hover {
-  background-color: rgba(255,255,255,0.12);
-}
-
-/* OPEN STATE (used by your JS) */
-.dropdown.active .dropdown-panel {
+/* SHOW ON HOVER ) */
+.nav-item:hover .dropdown-menu {
   display: block;
 }
