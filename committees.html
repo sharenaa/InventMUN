@@ -203,6 +203,33 @@
     <p>© 2026 InventMUN. Website designed by Sharena Sharif & Nataly Parache</p>
   </center>
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+  const dropdowns = document.querySelectorAll(".nav-item");
+
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener("click", function (e) {
+      e.stopPropagation();
+
+      // Close all other dropdowns
+      dropdowns.forEach(d => {
+        if (d !== dropdown) {
+          d.classList.remove("active");
+        }
+      });
+
+      // Toggle this one
+      dropdown.classList.toggle("active");
+    });
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", function () {
+    dropdowns.forEach(d => d.classList.remove("active"));
+  });
+
+});
+</script>
 </body>
 </html>
