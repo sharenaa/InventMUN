@@ -679,25 +679,7 @@ header h2 {
   color: #0b3c6f;
 }
 
-nav a {
-  margin-left: 22px;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  color: #374151;
-}
 
-nav a:hover {
-  color: #0b3c6f;
-}
-
-/* Active page */
-nav a.active {
-  color: #0b3c6f;
-  font-weight: 600;
-  border-bottom: 2px solid #d4af37;
-  padding-bottom: 4px;
-}
 /* ===== COMMITTEES PAGE ACCENTS ===== */
 
 .committees-main {
