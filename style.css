@@ -123,7 +123,6 @@ body {
   background: rgba(255,255,255,0.12);
 }
 
-/* THIS LINE MAKES IT SHOW */
 .nav-item:hover .dropdown-menu {
   display: block;
 }
