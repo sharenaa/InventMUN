@@ -12,23 +12,42 @@
   <!-- Main CSS -->
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<header class="navbar">
+
+ <header class="navbar">
   <div class="brand">
     <img src="logo.png" alt="InventMUN Logo" class="brand-logo">
   </div>
 
- <nav class="nav-links">
-  <a href="index.html">Welcome</a>
-  <a href="aboutus.html">About Us</a>
-  <a href="registration.html">Registration</a>
-  <a href="committees.html">Committees</a>
-  <a href="conference.html">Conference</a>
-  <a href="sponsors.html">Sponsors</a>
-  <a href="contactus.html">Contact Us</a>
-</nav>
+  <nav class="nav-links">
+    <a href="index.html">Welcome</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="registration.html">Registration</a>
+
+    <!-- COMMITTEES -->
+    <div class="nav-item">
+      <span>Committees</span>
+      <div class="dropdown-menu">
+        <a href="topicguides.html">Topic Guides</a>
+        <a href="committeepolicies.html">Committee Policies</a>
+      </div>
+    </div>
+
+    <!-- CONFERENCE -->
+    <div class="nav-item">
+      <span>Conference</span>
+      <div class="dropdown-menu">
+        <a href="delegateresources.html">Delegate Resources</a>
+        <a href="dresscode.html">Dress Code</a>
+      </div>
+    </div>
+
+    <a href="sponsors.html">Sponsors</a>
+    <a href="contactus.html">Contact Us</a>
+  </nav>
   
 </header>
 <main class="schedule-main">
