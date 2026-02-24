@@ -77,3 +77,53 @@ body {
   display: block;
 }
 .dropdown { }
+/* ===== NAV DROPDOWN (YMUN STYLE) ===== */
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item span {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.nav-item:hover span {
+  color: #0b3c6f;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+
+  background-color: #0b3a6e;
+  min-width: 240px;
+  padding: 16px 0;
+
+  box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+  z-index: 9999;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 24px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+/* THIS LINE MAKES IT SHOW */
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
