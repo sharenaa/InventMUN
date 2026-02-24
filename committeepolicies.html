@@ -47,3 +47,138 @@
   </nav>
 </header>
 
+  <!-- Committee Policies -->
+<section style="max-width: 900px; margin: 80px auto; padding: 0 20px;">
+  <h2 style="font-family: 'Playfair Display', serif; margin-bottom: 25px;">
+    Committee Policies
+  </h2>
+
+  <div style="font-family: 'Inter', sans-serif; line-height: 1.7;">
+
+    <h3>Attendance Policy</h3>
+    <p>
+      Attendance will be taken at the beginning of each committee session.
+      Delegates who are absent will have their advisor notified.
+      Delegates may not leave their assigned committee or visit other
+      committees during unmoderated caucuses.
+    </p>
+
+    <h3>Notes Policy</h3>
+    <p>
+      Delegates are encouraged to bring handwritten or printed notes,
+      including their topic guide, to assist them during debate.
+      Pre-written materials such as draft resolutions, working papers,
+      or crisis notes are not permitted.
+    </p>
+    <p>
+      Any delegate found in possession of pre-written materials will be
+      disqualified from awards and their advisor will be informed.
+    </p>
+
+    <h3>Technology Policy</h3>
+    <p>
+      Phones are not permitted in committee at any time.
+      Delegates found using phones will be disqualified from awards.
+    </p>
+    <p>
+      Laptops and tablets may only be used during designated unmoderated
+      caucuses for working paper and resolution writing.
+      Devices may not be used during moderated caucuses for any purpose.
+    </p>
+
+    <h3>AI & Academic Integrity Policy</h3>
+    <p>
+      The use of artificial intelligence, plagiarism, or pre-written
+      materials is strictly prohibited at InventMUN.
+    </p>
+
+    <h3>Behavior Policy</h3>
+    <p>
+      Delegates are expected to engage in debate in a professional and
+      respectful manner at all times.
+      Bullying, discrimination, harassment, or vulgar language will not
+      be tolerated.
+    </p>
+
+  </div>
+</section>
+
+</center>
+</main>
+
+<hr>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-grid">
+
+    <div class="footer-column">
+      <h4>Conference Information</h4>
+      <p>March 28, 2026</p>
+      <p>
+        Thomas A. Edison Career and Technical Education High School<br>
+        165-65 84th Ave, Jamaica, NY 11432
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact Us</h4>
+      <p>
+        Secretary-General:
+        <a href="mailto:justins4982@nycstudents.net">justins4982@nycstudents.net</a>
+      </p>
+      <p>
+        Advisor Inquiries:
+        <a href="mailto:advisor@inventmun.org">advisor@inventmun.org</a>
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Thomas A. Edison CTE HS</h4>
+      <p>
+        <a href="https://www.schools.nyc.gov" target="_blank">
+          NYC Department of Education
+        </a>
+      </p>
+      <p>
+        Career & Technical Education Programs
+      </p>
+    </div>
+
+  </div>
+
+  <center>
+    <p>© 2026 InventMUN. Website designed by Sharena Sharif & Nataly Parache</p>
+  </center>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const dropdowns = document.querySelectorAll(".nav-item");
+
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener("click", function (e) {
+      e.stopPropagation();
+
+      // Close all other dropdowns
+      dropdowns.forEach(d => {
+        if (d !== dropdown) {
+          d.classList.remove("active");
+        }
+      });
+
+      // Toggle this one
+      dropdown.classList.toggle("active");
+    });
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", function () {
+    dropdowns.forEach(d => d.classList.remove("active"));
+  });
+
+});
+</script>
+</body>
+</html>
+
