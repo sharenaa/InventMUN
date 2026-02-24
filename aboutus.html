@@ -18,25 +18,9 @@
   <a href="index.html">Welcome</a>
   <a href="aboutus.html">About Us</a>
   <a href="registration.html">Registration</a>
-
-  <!-- COMMITTEES -->
-  <div class="dropdown">
-    <button class="dropbtn">Committees</button>
-    <div class="dropdown-panel">
-      <a href="committeepolicies.html">Committee Policies</a>
-      <a href="topicguides.html">Topic Guides</a>
-    </div>
-  </div>
-
-  <!-- CONFERENCE -->
-  <div class="dropdown">
-    <button class="dropbtn">Conference</button>
-    <div class="dropdown-panel">
-      <a href="delegateresources.html">Delegate Resources</a>
-      <a href="dresscode.html">Dress Code</a>
-    </div>
-  </div>
-
+  <a href="committees.html">Committees</a>
+  <a href="conference.html">Conference</a>
+  <a href="sponsors.html">Sponsors</a>
   <a href="contactus.html">Contact Us</a>
 </nav>
 </header>
@@ -340,22 +324,6 @@ function toggleInfo(clickedCard) {
   <p> © 2026 InventMUN. Website designed by Sharena Sharif & Nataly Parache</p>
     </center>
 </footer>
-<script>
-  document.querySelectorAll('.dropbtn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
 
-      document.querySelectorAll('.dropdown')
-        .forEach(d => d.classList.remove('active'));
-
-      btn.parentElement.classList.add('active');
-    });
-  });
-
-  document.addEventListener('click', () => {
-    document.querySelectorAll('.dropdown')
-      .forEach(d => d.classList.remove('active'));
-  });
-</script>
 </body>
 </html>
