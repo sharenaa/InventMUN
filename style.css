@@ -126,3 +126,12 @@ body {
 .nav-item:hover .dropdown-menu {
   display: block;
 }
+/* Hide by default */
+.dropdown-menu {
+  display: none;
+}
+
+/* Show when active */
+.nav-item.active .dropdown-menu {
+  display: block;
+}
