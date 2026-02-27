@@ -1988,3 +1988,22 @@ h1, h2 {
     padding: 70px 30px;
   }
 }
+
+   .container {
+  position: relative; 
+}
+
+.text-overlay {
+  position: absolute; /* Position text over the image */
+  bottom: 0; /*position at the bottom */
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent background */
+  color: white;
+  width: 100%;
+  opacity: 0; /* Hide by default */
+  transition: opacity 0.3s ease; /* a smooth transition effect */
+}
+
+.container:hover .text-overlay {
+  opacity: 1; /* Show when the container is hovered over */
+}
+
