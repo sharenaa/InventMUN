@@ -135,3 +135,11 @@ body {
 .nav-item.active .dropdown-menu {
   display: block;
 }
+/* REQUIRED FOR JS DROPDOWN TO SHOW */
+.dropdown-menu {
+  display: none;
+}
+
+.nav-item.active .dropdown-menu {
+  display: block;
+}
