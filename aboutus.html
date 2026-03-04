@@ -9,39 +9,160 @@
 </head>
 <body>
 <style>
-.container {
-  position: relative;
-  width: 100%;
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.image {
-  width: 100%;
-  height: auto;
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background: #f4f6f9;
+  color: #111;
+  line-height: 1.5;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #215c94;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 12px;
-  position: absolute;
+/* ===== PAGE TITLE ===== */
+h1 {
   text-align: center;
-  line-height: 2;
+  margin-top: 70px;
+  font-size: 34px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.gold-divider {
+  width: 80px;
+  height: 3px;
+  background: #d4af37;
+  margin: 15px auto 60px auto;
+  border-radius: 2px;
+}
+
+/* ===== GRID LAYOUT ===== */
+.secretariat-grid {
+  width: 92%;
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 50px;
+  padding-bottom: 100px;
+}
+
+/* ===== MEMBER TEXT ABOVE CARD ===== */
+.member {
+  text-align: center;
+}
+
+.role {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #6c757d;
+  margin-bottom: 6px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* ===== CARD STRUCTURE ===== */
+.press-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  height: 380px; /* forces uniform size */
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.press-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.18);
+}
+
+/* ===== IMAGE ===== */
+.press-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.press-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ===== OVERLAY ===== */
+.press-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(12, 35, 64, 0.98) 20%,
+    rgba(12, 35, 64, 0.9) 55%,
+    rgba(12, 35, 64, 0.75) 100%
+  );
+  color: white;
+  padding: 30px;
+  display: flex;
+  align-items: flex-end;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.45s ease;
+  backdrop-filter: blur(6px);
+  border-top: 3px solid #d4af37;
+}
+
+.press-card:hover .press-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== TEXT INSIDE OVERLAY ===== */
+.press-text {
+  font-size: 14px;
+  line-height: 1.7;
+  max-height: 90%;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+/* Scrollbar Styling */
+.press-text::-webkit-scrollbar {
+  width: 6px;
+}
+
+.press-text::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.4);
+  border-radius: 4px;
+}
+
+.press-text::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .press-card {
+    height: 340px;
+  }
+
+  .press-overlay {
+    padding: 20px;
+  }
+
+  .press-text {
+    font-size: 13px;
+  }
 }
 </style>
     <header class="navbar">
@@ -52,7 +173,7 @@
   <nav class="nav-links">
     <a href="index.html">Welcome</a>
     <a href="aboutus.html">About Us</a>
-    <a href="registration.html">Registration</
+    <a href="registration.html">Registration</a>
 
     <!-- COMMITTEES -->
     <div class="nav-item">
@@ -79,285 +200,220 @@
   </nav>
 </header>
   
+
 <section class="about">
-  <h1 class="about-title">OUR SECRETARIAT</h1>
-  <div class="gold-divider"></div>
+<h1 class="about-title">OUR SECRETARIAT</h1>
+<div class="gold-divider"></div>
+<div class="secretariat-grid">
 
-  <div class="secretariat-grid">
-
-   <div class="member">
-  <h3 class="role">Secretary-General</h3>
-  <h2 class="name">Justin Smiley-Carter</h2>
-  <p class="email">jsmileycinventmun@gmail.com</p>
-
-          <div class="container">
-  <img src="JUSTIN-SECRETARYGENERAL.png" alt="Secretary-General" class="image">
-  <div class="overlay">
-    <div class="text">Justin is honored to serve as the Secretary-General of InventMUN. He was born and raised in Queens, NY, with African American and Nigerian heritage. While currently enrolled in the Graphic Design program, he plans to become a Philosophy major on the Pre-Law track to be an attorney in the future. Model UN has always been something he wanted to do since middle school because of his passion for social advocacy and cultural analysis, but Edison's MUN team amplified that. He is an independent musician and spends most of his time writing for other artists. In his spare time, he also likes to photograph, and he’s been working on a novel for 2 years now. He enjoys how normal it is to be different here. “When you walk the halls, you see students with vast displays of expression. We get to be whatever we choose and that is represented throughout our entire school's motto. From experimental fashion on a regular Tuesday and alternative clubs to underground musician networks, the agency and atmosphere of the school is in the students' hands, and he thinks that teaches all of us how to make our own decisions and find our own path.</div>
-  </div>
-</div>
-
- 
-   
-      <p class="bio">
-        Oversees all aspects of the conference and ensures a professional,
-        engaging, and educational experience for all delegates.</p>
-    </div>
-
-    <div class="member">
-      <h3 class="role">Deputy Secretary General</h3>
-      <h2 class="name">Elissa Canas</h2>
-      <p class="email">elissacanas.inventmun@gmail.com </p>
-      
-         <div class="container">
-      <img src="ELISSA-DEPUTYSECRETARYGENERAL.png" alt="Deputy Secretary General"  class="image">
-            <div class="overlay">
-    <div class="text">Elissa is honored to serve as the Deputy Secretary-General of InventMun. She was born and raised in Queens NY with Portuguese and Salvadoran heritage. While currently enrolled in the Graphic Design program, she plans on going into Elementary Education for college. Elissa joined MUN because she wanted to expand her knowledge on current events around the world. Elissa played varsity soccer for the past 4 years & became captain in her senior year. She believes that Thomas A. Edison has multiple communities in one, making every student feel like they have a place in our school.</div>
-  </div>
-</div>
-              
-      <p class="bio">
-        Acts as a top-tier organizer, supporting the Secretary-General (SG) to 
-        ensure the conference runs smoothly.
-      </p>
-    </div>
-
-    <div class="member">
-      <h3 class="role">Chief Of Staff</h3>
-      <h2 class="name">Winifred Odikagbue</h2>
-      <p class="email">winifredo2@nycstudents.net</p>
-
-               <div class="container">
-      <img src="winnie.png" alt="winnie.png" class="image">
-    <div class="overlay">
-    <div class="text">Winnie is honored to serve as the Chief of Staff of InventMun. She is Nigerian American and is enrolled in the Electrical Installation program, and she plans on majoring in Biology for her college major. She is very optimistic when it comes to voicing my opinions, and she enjoys engaging in valuable debate, especially when it involves topics that affect and will affect my generation in the long run. She believes MUN exposes younger generations to the real world, and allows them to experience the world through the lens of a leader. She is involved in Anime Club, Student designers club, Intern at CCM, National honor society, volunteering at her local community garden, and JROTC. She enjoys the sense of community you feel anywhere you go in the school. She feels like no matter your background, and your identity, you will always be able to make friends, join clubs, and establish meaningful friendships with other students at this school!</div>
-</div>
-</div>
-      <p class="bio">
-        Acts as a strategic adviser, "right hand," and air traffic controller for 
-        a CEO or senior leader, managing high-level projects, filtering information, 
-        and improving organizational efficiency.  </p>
-      
-    </div>
+<!-- JUSTIN -->
 <div class="member">
-      <h3 class="role">Deputy Chief Of Staff</h3>
-      <h2 class="name">Jada Shackleford</h2>
-      <p class="email">jadas180@nycstudents.net</p>
-      <img src="JADA-DEPUTYCHIEFOFSTAFF.png" alt="Deputy Chief Of Staff">
-      <p class="bio">
-        Acts as the second-in-command, managing daily operations, 
-        implementing strategic plans, and supervising staff to support a top leader.
-      </p>
-    </div>
+<h3 class="role">Secretary-General</h3>
+<h2 class="name">Justin Smiley-Carter</h2>
+<p class="email">jsmileycinventmun@gmail.com</p>
+<div class="press-card">
+<img src="JUSTIN-SECRETARYGENERAL.png" alt="Secretary-General">
+<div class="press-overlay"><div class="press-text">
+Justin is honored to serve as the Secretary-General of InventMUN. Born and raised in Queens, NY, he comes from African American and Nigerian heritage. Currently enrolled in the Graphic Design CTE Program, he plans to major in Philosophy on the Pre-Law track with aspirations of becoming an attorney. His passion for social advocacy and cultural analysis led him to Model UN, where Edison’s program amplified his voice and leadership.
+</div></div>
+</div>
+<p class="bio">Oversees all aspects of the conference.</p>
+</div>
 
-    <div class="member">
-      <h3 class="role">Press General</h3>
-      <h2 class="name">Leah Small</h2>
-      <p class="email">leahs113@nycstudents.net</p>
-      <img src="LEAH-PRESSGENERAL.jpeg" alt="Press General">
-      <p class="bio">
-        Acts as the media team, covering, reporting on, and analyzing the 
-        proceedings of various committees.
-      </p>
-    </div>
+<!-- ELISSA -->
+<div class="member">
+<h3 class="role">Deputy Secretary General</h3>
+<h2 class="name">Elissa Canas</h2>
+<p class="email">elissacanas.inventmun@gmail.com</p>
+<div class="press-card">
+<img src="ELISSA-DEPUTYSECRETARYGENERAL.png" alt="Deputy Secretary General">
+<div class="press-overlay"><div class="press-text">
+Elissa is honored to serve as Deputy Secretary-General of InventMUN. Born and raised in Queens, NY, she plans to pursue Elementary Education and values leadership through Model UN.
+</div></div>
+</div>
+<p class="bio">Supports the Secretary-General.</p>
+</div>
 
-    <div class="member">
-      <h3 class="role">Director General Of Committees</h3>
-      <h2 class="name">Rihanna Qiu</h2>
-      <p class="email">rihannaq2@nycstudents.net</p>
-      <img src="RIHANNA-DIRECTORGENERALOFCOMMITTEES.png" alt="Director-General of Committees">
-      <p class="bio">
-        Oversees the substantive and logistical operations of 
-        the General Assembly committees.
-      </p>
-    </div>
+<!-- WINNIE -->
+<div class="member">
+<h3 class="role">Chief Of Staff</h3>
+<h2 class="name">Winifred Odikagbue</h2>
+<p class="email">winifredo2@nycstudents.net</p>
+<div class="press-card">
+<img src="winnie.png" alt="Chief Of Staff">
+<div class="press-overlay"><div class="press-text">
+Winnie serves as Chief of Staff, supporting high-level coordination and strategic planning across departments.
+</div></div>
+</div>
+<p class="bio">Acts as strategic adviser.</p>
+</div>
 
-    <div class="member">
-      <h3 class="role">USG Of Delegate Affairs</h3>
-      <h2 class="name">Aiyana Acosta</h2>
-      <p class="email">aiyanaa4@nycstudents.net</p>
-      <img src="AIYANA-USGOFDELEGATEAFFAIRS.png" alt="USG Of Delegate Affairs">
-      <p class="bio">
-        Managing the entire delegate experience, 
-        from initial registration to on-site support.
-      </p>
-      </div>
+<!-- JADA -->
+<div class="member">
+<h3 class="role">Deputy Chief Of Staff</h3>
+<h2 class="name">Jada Shackleford</h2>
+<p class="email">jadas180@nycstudents.net</p>
+<div class="press-card">
+<img src="JADA-DEPUTYCHIEFOFSTAFF.png" alt="Deputy Chief Of Staff">
+<div class="press-overlay"><div class="press-text">
+Jada serves as Deputy Chief of Staff, coordinating operations and supporting leadership initiatives.
+</div></div>
+</div>
+<p class="bio">Second-in-command operations leader.</p>
+</div>
 
-      <div class="member">
-      <h3 class="role">ASG Of Delegate Affairs</h3>
-      <h2 class="name">Nicole Leonardo</h2>
-      <p class="email">nicolel228@nycstudents.net</p>
-      <img src="NICOLE-ASG OF DEL AFFAIRS.jpeg" alt="ASG Of Delegate Affairs">
-      <p class="bio">
-        Managing the entire delegate experience, 
-        from initial registration to on-site support.
-      </p>
-      </div>
+<!-- LEAH -->
+<div class="member">
+<h3 class="role">Press General</h3>
+<h2 class="name">Leah Small</h2>
+<p class="email">leahs113@nycstudents.net</p>
+<div class="press-card">
+<img src="LEAH-PRESSGENERAL.jpeg" alt="Press General">
+<div class="press-overlay"><div class="press-text">
+Leah leads the media team, documenting and analyzing committee proceedings.
+</div></div>
+</div>
+<p class="bio">Conference media leadership.</p>
+</div>
 
-     <div class="member">
-      <h3 class="role">USG OF Technology</h3>
-      <h2 class="name">Chalantica Roy</h2>
-      <p class="email">chalanticar@nycstudents.net</p>
-      <img src="CHALANTICA-USGOFTECH.png" alt="USG Of Technology">
-      <p class="bio">
-        Manages all technical devices and the technology
-        throughout the conference.
-      </p>
-      </div>
-    <div class="member">
-      <h3 class="role">Delegate/Chair Trainer</h3>
-      <h2 class="name">Jordan Chapman</h2>
-      <p class="email">jordanc276@nycstudents.net</p>
-      <img src="JORDAN-DELEGATETRAINER-CHAIR.png" alt="Delegate/Chair Trainer">
-      <p class="bio">
-        Prepares students to excel by conducting skill labs, 
-        organizing mock debates, and teaching parliamentary procedures.
-      </p>
-    </div>
+<!-- RIhanna -->
+<div class="member">
+<h3 class="role">Director General Of Committees</h3>
+<h2 class="name">Rihanna Qiu</h2>
+<p class="email">rihannaq2@nycstudents.net</p>
+<div class="press-card">
+<img src="RIHANNA-DIRECTORGENERALOFCOMMITTEES.png">
+<div class="press-overlay"><div class="press-text">
+Rihanna oversees committee operations and academic standards.
+</div></div>
+</div>
+<p class="bio">Oversees General Assembly committees.</p>
+</div>
 
-    <div class="member">
-      <h3 class="role">USG Of Marketing And Outreach</h3>
-      <h2 class="name">Yoselin Cortes Hernandez</h2>
-      <p class="email">yoselinc9@nycstudents.net</p>
-      <img src="YOSELIN-USGOFMARKETING&OUTREACH.png" alt="USG Of Marketing And Outreach">
-      <p class="bio">
-        Responsible for promoting the event, increasing visibility, 
-        managing social media, and securing partnerships.
-      </p>
-    </div>
+<!-- AIYANA -->
+<div class="member">
+<h3 class="role">USG Of Delegate Affairs</h3>
+<h2 class="name">Aiyana Acosta</h2>
+<p class="email">aiyanaa4@nycstudents.net</p>
+<div class="press-card">
+<img src="AIYANA-USGOFDELEGATEAFFAIRS.png">
+<div class="press-overlay"><div class="press-text">
+Aiyana manages delegate registration and support systems.
+</div></div>
+</div>
+<p class="bio">Delegate experience management.</p>
+</div>
 
-    <div class="member">
-      <h3 class="role">USG Of Finance </h3>
-      <h2 class="name">Luis Garcia</h2>
-      <p class="email">luisgarcia.inventmun@gmail.com</p>
-      <img src="LUIS-USGOFFINANCE CHAIR.png" alt="USG Of Finance Chair">
-      <p class="bio">
-        Manages the event's budget, tracks expenses, 
-        and secures sponsorships or funding.
-      </p>
-    </div>
+<!-- NICOLE -->
+<div class="member">
+<h3 class="role">ASG Of Delegate Affairs</h3>
+<h2 class="name">Nicole Leonardo</h2>
+<p class="email">nicolel228@nycstudents.net</p>
+<div class="press-card">
+<img src="NICOLE-ASG OF DEL AFFAIRS.jpeg">
+<div class="press-overlay"><div class="press-text">
+Nicole assists with delegate coordination and communication.
+</div></div>
+</div>
+<p class="bio">Delegate operations support.</p>
+</div>
 
-    <div class="member">
-      <h3 class="role">USG Of Workshops</h3>
-      <h2 class="name">Jayron Salazar</h2>
-      <p class="email">jayrons@nycstudents.net</p>
-      <img src="JAYRON-USGOFWORKSHOPS.png" alt="USG Of Workshops">
-      <p class="bio">
-        Responsible for developing, organizing, and executing training sessions, 
-        workshops, and educational materials for delegates and staff.
-      </p>
-    </div>
+<!-- CHALANTICA -->
+<div class="member">
+<h3 class="role">USG OF Technology</h3>
+<h2 class="name">Chalantica Roy</h2>
+<p class="email">chalanticar@nycstudents.net</p>
+<div class="press-card">
+<img src="CHALANTICA-USGOFTECH.png">
+<div class="press-overlay"><div class="press-text">
+Chalantica oversees all technical systems and digital operations.
+</div></div>
+</div>
+<p class="bio">Technology leadership.</p>
+</div>
 
-    <div class="member">
-      <h3 class="role">Director Of Crisis</h3>
-      <h2 class="name">Ivy Polanco</h2>
-      <p class="email">ivyp8@nycstudents.net</p>
-      <img src="IVY-CRISISDIRECTOR.jpeg" alt="Director Of Crisis">
-      <p class="bio">
-        Manages the "backroom," controlling the flow, narrative, 
-        and updates of a crisis committee. 
-      </p>
-    </div>
+<!-- JORDAN -->
+<div class="member">
+<h3 class="role">Delegate/Chair Trainer</h3>
+<h2 class="name">Jordan Chapman</h2>
+<p class="email">jordanc276@nycstudents.net</p>
+<div class="press-card">
+<img src="JORDAN-DELEGATETRAINER-CHAIR.png">
+<div class="press-overlay"><div class="press-text">
+Jordan trains delegates and chairs in procedure and debate skills.
+</div></div>
+</div>
+<p class="bio">Training leadership.</p>
+</div>
 
-    <div class="member">
-      <h3 class="role">Director Of General Assembly</h3>
-      <h2 class="name">Kassandra Done</h2>
-      <p class="email">kassandrad21@nycstudents.net</p>
-      <img src="KASSANDRA-GADIRECTOR.png" alt="Director Of General Assembly">
-      <p class="bio">
-       Oversees the largest committees, ensuring smooth, realistic 
-       simulations of international diplomacy for over 150 delegates.
-      </p>
-    </div>
+<!-- LUIS -->
+<div class="member">
+<h3 class="role">USG Of Finance</h3>
+<h2 class="name">Luis Garcia</h2>
+<p class="email">luisgarcia.inventmun@gmail.com</p>
+<div class="press-card">
+<img src="LUIS-USGOFFINANCE CHAIR.png">
+<div class="press-overlay"><div class="press-text">
+Luis manages conference budgeting and sponsorships.
+</div></div>
+</div>
+<p class="bio">Financial oversight.</p>
+</div>
 
-    <div class="member">
-      <h3 class="role">USG Of Design</h3>
-      <h2 class="name">Jessica Velazquez</h2>
-      <p class="email">jessicav174@nycstudents.net</p>
-      <img src="IMG_1552.jpeg" alt="IMG">
-      <p class="bio">
-       Creative lead responsible for the visual identity, 
-       branding,and aesthetic aspects of the event.
-      </p>
-    </div>
-  </div>
+</div>
 </section>
 
+<!-- CHAIRS SECTION -->
 <section class="about">
-  <h1 class="about-title">OUR CHAIRS</h1>
-    <div class="gold-divider"></div>
+<h1 class="about-title">OUR CHAIRS</h1>
+<div class="gold-divider"></div>
+<div class="secretariat-grid">
 
-  <div class="secretariat-grid">
-    
-  <div class="member">
-      <h3 class="role">Grey's Anatomy</h3>
-      <h2 class="name">Luke Ramlogan & Kristopher Tzunun</h2>
-      <p class="email">LUker41@nycstudents.net KRistophert9@nycstudents.net</p>
-      <img src="KRISLUKE-GREYSANATOMY.png" alt="Grey's Anatomy Crisis">
-    </div>
+<div class="member">
+<h3 class="role">UNOOSA</h3>
+<h2 class="name">Amy Bangaroo & Samuel Khanimov</h2>
+<div class="press-card">
+<img src="AMYSAM-UNOOSA.png">
+<div class="press-overlay"><div class="press-text">
+Amy and Samuel chair UNOOSA, facilitating diplomatic space policy debate.
+</div></div>
+</div>
+</div>
 
+<div class="member">
+<h3 class="role">UNEP</h3>
+<h2 class="name">Erick Canastuj Vallad & Maryam Akber</h2>
+<div class="press-card">
+<img src="ERICK&MARYAM- CHAIRS.jpeg">
+<div class="press-overlay"><div class="press-text">
+Erick and Maryam lead UNEP, guiding environmental diplomacy discussions.
+</div></div>
+</div>
+</div>
 
-    <div class="member">
-      <h3 class="role">Mayor's First Day</h3>
-      <h2 class="name">Jessica Baba & Gabrielle Salins</h2>
-      <p class="email">jab19@williams.edu     Salinsgabrielle@gmail.com</p>
-      <img src="GABI-JESSICA-CHAIRS.jpeg" alt="Mayor's First Day chairs">
-    </div>
-
-    <div class="member">
-      <h3 class="role">UNOOSA</h3>
-      <h2 class="name">Amy Bangaroo & Samuel Khanimov</h2>
-      <p class="email">amybangaroo.inventmun@gmail.com samuelk112@nycstudents.net</p>
-      <img src="AMYSAM-UNOOSA.png" alt="UNOOSA">
-    </div>
-
-    <div class="member">
-      <h3 class="role">UNCLOS</h3>
-      <h2 class="name">Jordan Chapman & Luis Garcia</h2>
-      <p class="email">jordanc276@nycstudents.net luisgarcia.inventmun@gmail.com</p>
-      <img src="JORDANLUIS-UNCLOS.png" alt="UNCLOS">
-    </div>
-
-
-    <div class="member">
-      <h3 class="role">UNEP</h3>
-      <h2 class="name">Erick Canastuj Vallad & Maryam Akber</h2>
-      <p class="email">ERickc7898@nycstudents.net maryamakber.inventmun@gmail.com</p>
-      <img src="ERICK&MARYAM- CHAIRS.jpeg" alt="CHAIRS">
-    </div>
-
-  </div>
+</div>
 </section>
 
- <section class="about">
-  <h1 class="about-title">THE WEBMASTERS</h1>
-  <div class="gold-divider"></div>
+<!-- WEBMASTERS -->
+<section class="about">
+<h1 class="about-title">THE WEBMASTERS</h1>
+<div class="gold-divider"></div>
+<div class="secretariat-grid">
 
-  <div class="secretariat-grid">
-    <div class="member">
-      <h3 class="role">INVENTMUN.ORG</h3>
-      <h2 class="name">Nataly Parache & Sharena Sharif</h2>
-      <p class="email">
-        natalyp13@nycstudents.net<br>
-        sharenas@nycstudents.net
-      </p>
-      <img src="WEBMASTERS.jpeg" alt="The Webmasters" style="width: 30%;">
-    </div>
-  </div>
+<div class="member">
+<h3 class="role">INVENTMUN.ORG</h3>
+<h2 class="name">Nataly Parache & Sharena Sharif</h2>
+<div class="press-card">
+<img src="WEBMASTERS.jpeg">
+<div class="press-overlay"><div class="press-text">
+Nataly and Sharena designed and maintain the official InventMUN website.
+</div></div>
+</div>
+</div>
+
+</div>
 </section>
 
-  
-  <script>
-function toggleInfo(clickedCard) {
-  document.querySelectorAll('.secretariat-card').forEach(card => {
-    if (card !== clickedCard) {
-      card.classList.remove('active');
-    }
-  });
-
-  clickedCard.classList.toggle('active');
-}
-</script>
   
  <!-- FOOTER -->
 <footer class="site-footer">
