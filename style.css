@@ -581,3 +581,35 @@ body {
 .nav-item:hover span::after {
   width: 100%;
 }
+.press-container {
+  max-width: 850px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+/* CESIMS header */
+.press-top {
+  font-family: 'Inter', sans-serif;
+  color: #0f2a44;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+/* paragraphs */
+.press-text {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 22px;
+  color: #333;
+}
+
+/* signature */
+.press-signature {
+  margin-top: 50px;
+}
+
+.press-signature strong {
+  color: #0f2a44;
+}
