@@ -143,3 +143,110 @@ body {
 .nav-item.active .dropdown-menu {
   display: block;
 }
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR CONTAINER */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #0f2a44; /* Yale blue */
+}
+
+/* LOGO */
+.brand-logo {
+  height: 50px;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* NORMAL LINKS */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.nav-links a:hover {
+  color: #c9a646; /* gold */
+}
+
+/* DROPDOWN WRAPPER */
+.nav-item {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+/* DROPDOWN TITLE (like "About Us") */
+.nav-item span {
+  transition: 0.3s;
+}
+
+/* HOVER COLOR */
+.nav-item:hover span {
+  color: #c9a646;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 180px;
+  border-radius: 6px;
+  padding: 10px 0;
+
+  /* hidden by default */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+/* SHOW DROPDOWN */
+.nav-item:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* DROPDOWN LINKS */
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* DROPDOWN HOVER */
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+  color: #0f2a44;
+}
+
+/* OPTIONAL: ACTIVE PAGE */
+.nav-links a.active {
+  border-bottom: 2px solid #c9a646;
+}
