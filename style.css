@@ -208,3 +208,77 @@ body {
 .press-signature strong {
   color: #0f2a44;
 }
+/* ================= WRAPPER ================= */
+.press-wrapper {
+  max-width: 1200px;
+  margin: 140px auto 80px auto;
+  padding: 0 40px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+}
+
+/* LEFT SIDE */
+.press-left {
+  max-width: 650px;
+}
+
+/* RIGHT SIDE */
+.press-right {
+  display: flex;
+  align-items: center;
+}
+
+/* QUOTE (YMUN STYLE) */
+.press-quote {
+  font-size: 20px;
+  font-style: italic;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.press-top {
+  font-family: 'Inter', sans-serif;
+  color: #0f2a44;
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+/* GOLD LINE */
+.press-top::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #c9a646;
+  margin-top: 10px;
+}
+
+/* META */
+.press-meta {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* TEXT */
+.press-text {
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 22px;
+  color: #2c2c2c;
+}
+
+/* SIGNATURE */
+.press-signature {
+  margin-top: 60px;
+}
+
+.press-signature strong {
+  color: #0f2a44;
+}
