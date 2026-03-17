@@ -1988,3 +1988,102 @@ h1, h2 {
     padding: 70px 30px;
   }
    
+.press-container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+.press-title {
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #1d3557;
+}
+
+.press-intro {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.press-container p {
+  margin-bottom: 18px;
+}
+
+.press-signature {
+  margin-top: 50px;
+}
+
+.press-signature p {
+  margin-bottom: 15px;
+}
+
+   /* COLORS */
+:root {
+  --yale-blue: #0f2a44;
+  --gold: #c9a646;
+  --text-dark: #2c2c2c;
+}
+
+/* HEADER */
+.press-header {
+  background-color: var(--yale-blue);
+  color: white;
+  padding: 20px 40px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 2px;
+}
+
+.press-header h2 {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* MAIN CONTAINER */
+.press-container {
+  max-width: 750px;
+  margin: 80px auto;
+  padding: 20px;
+  font-family: 'Libre Baskerville', serif;
+  color: var(--text-dark);
+  line-height: 1.8;
+}
+
+/* TITLE */
+.press-title {
+  font-size: 44px;
+  color: var(--yale-blue);
+  margin-bottom: 10px;
+}
+
+/* GOLD LINE UNDER TITLE */
+.press-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--gold);
+  margin-top: 12px;
+}
+
+/* INTRO */
+.press-intro {
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+/* PARAGRAPHS */
+.press-container p {
+  margin-bottom: 20px;
+}
+
+/* SIGNATURE */
+.press-signature {
+  margin-top: 60px;
+}
+
+.press-signature strong {
+  color: var(--yale-blue);
+}
