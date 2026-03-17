@@ -154,3 +154,57 @@ body {
 .press-signature strong {
   color: #0f2a44;
 }
+/* ================= PRESS PAGE (PRO VERSION) ================= */
+.press-container {
+  max-width: 760px;
+  margin: 140px auto 80px auto;
+  padding: 0 20px;
+  background: transparent !important;
+}
+
+/* CESIMS HEADER */
+.press-top {
+  font-family: 'Inter', sans-serif;
+  color: #0f2a44;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+/* GOLD LINE */
+.press-top::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #c9a646;
+  margin-top: 10px;
+}
+
+/* DATE + LOCATION */
+.press-meta {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* TEXT */
+.press-text {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 17px;
+  line-height: 1.95;
+  margin-bottom: 24px;
+  color: #2c2c2c;
+}
+
+/* SIGNATURE */
+.press-signature {
+  margin-top: 60px;
+}
+
+.press-signature strong {
+  color: #0f2a44;
+}
