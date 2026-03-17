@@ -96,3 +96,80 @@
 
 </body>
 </html>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+
+    <!-- Conference Info -->
+    <div class="footer-column">
+      <h4>Conference Information</h4>
+      <p>March 28, 2026</p>
+      <p>
+        Thomas A. Edison Career and Technical Education High School<br>
+        165-65 84th Ave, Jamaica, NY 11432
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-column">
+      <h4>Contact Us</h4>
+      <p>
+        Secretary-General:
+        <a href="mailto:jsmileycinventmun@gmail.com">jsmileycinventmun@gmail.com</a>
+      </p>
+      <p>
+        Advisor Inquiries:
+       <a href="mailto:Dragavanis@schools.nyc.gov">Dragavanis@schools.nyc.gov</a>
+       <a href="mailto:Pbaker@schools.nyc.gov">Pbaker@schools.nyc.gov</a>
+      </p>
+    </div>
+
+    <!-- Affiliation / Links -->
+    <div class="footer-column">
+      <h4>Thomas A. Edison CTE HS</h4>
+      <p>
+        <a href="https://www.schools.nyc.gov" target="_blank">
+          NYC Department of Education
+        </a>
+      </p>
+      <p>
+        Career & Technical Education Programs
+      </p>
+    </div>
+
+  </div>
+  <center>
+  <p> © 2026 InventMUN. Website designed by Sharena Sharif & Nataly Parache</p>
+    </center>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const dropdowns = document.querySelectorAll(".nav-item");
+
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener("click", function (e) {
+      e.stopPropagation();
+
+      // Close all other dropdowns
+      dropdowns.forEach(d => {
+        if (d !== dropdown) {
+          d.classList.remove("active");
+        }
+      });
+
+      // Toggle this one
+      dropdown.classList.toggle("active");
+    });
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", function () {
+    dropdowns.forEach(d => d.classList.remove("active"));
+  });
+
+});
+</script>
+
+</body>
+</html>
