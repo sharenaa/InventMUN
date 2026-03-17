@@ -545,3 +545,39 @@ body {
 .nav-item:hover span::after {
   width: 100%;
 }
+/* ALL NAV ITEMS (links + dropdown titles) */
+.nav-links a,
+.nav-item span {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+/* GOLD ON HOVER */
+.nav-links a:hover,
+.nav-item:hover span {
+  color: #c9a646;
+}
+
+/* UNDERLINE EFFECT */
+.nav-links a::after,
+.nav-item span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background-color: #c9a646;
+  transition: width 0.3s ease;
+}
+
+/* SHOW UNDERLINE */
+.nav-links a:hover::after,
+.nav-item:hover span::after {
+  width: 100%;
+}
