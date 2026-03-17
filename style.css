@@ -250,3 +250,172 @@ body {
 .nav-links a.active {
   border-bottom: 2px solid #c9a646;
 }
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Libre Baskerville', serif;
+  line-height: 1.7;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #0f2a44; /* Yale blue */
+  position: relative;
+  z-index: 1000;
+}
+
+/* LOGO */
+.brand-logo {
+  height: 50px;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* NORMAL LINKS */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+/* HOVER */
+.nav-links a:hover {
+  color: #c9a646; /* gold */
+}
+
+/* ================= DROPDOWN ================= */
+.nav-item {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+/* LABEL */
+.nav-item span {
+  transition: color 0.3s ease;
+}
+
+/* HOVER LABEL */
+.nav-item:hover span {
+  color: #c9a646;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 180px;
+  border-radius: 6px;
+  padding: 10px 0;
+
+  /* hidden by default */
+  visibility: hidden;
+  transform: translateY(10px);
+
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* SHOW DROPDOWN */
+.nav-item:hover .dropdown-menu {
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* DROPDOWN LINKS */
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* DROPDOWN HOVER */
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+  color: #0f2a44;
+}
+
+/* ================= PRESS PAGE ================= */
+.press-container {
+  max-width: 750px;
+  margin: 80px auto;
+  padding: 20px;
+  background: none; /* removes gray box */
+}
+
+/* HEADER TEXT (CESIMS) */
+.press-header {
+  font-family: 'Inter', sans-serif;
+  color: #0f2a44;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* TITLE */
+.press-title {
+  font-size: 42px;
+  color: #0f2a44;
+  margin-bottom: 10px;
+}
+
+/* GOLD LINE UNDER TITLE */
+.press-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #c9a646;
+  margin-top: 12px;
+}
+
+/* INTRO */
+.press-intro {
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+/* PARAGRAPHS */
+.press-container p {
+  margin-bottom: 20px;
+}
+
+/* SIGNATURE */
+.press-signature {
+  margin-top: 50px;
+}
+
+.press-signature strong {
+  color: #0f2a44;
+}
+
+/* ================= FOOTER (optional cleanup) ================= */
+footer {
+  background-color: #f8f8f8;
+  padding: 40px;
+  margin-top: 60px;
+  font-family: 'Inter', sans-serif;
+}
